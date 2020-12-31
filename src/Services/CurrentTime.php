@@ -46,9 +46,7 @@ class CurrentTime {
       // Set selected timezone as current timezone.
       $date->setTimezone(new \DateTimeZone($timezone));
       // Set date format as required like 29th Dec 2020 - 11:59 PM.
-      // Secon in time is only added to check reflection of time
-      // without clearing cache.
-      $timezone_based_time = $date->format('dS M Y - h:i:s A');
+      $timezone_based_time = $date->format('dS M Y - h:i A');
     }
     else {
       $timezone_based_time = "No timezone is selected.";
