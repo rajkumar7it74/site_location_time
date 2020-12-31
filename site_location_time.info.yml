@@ -1,0 +1,7 @@
+name: 'Site Location Time'
+type: module
+description: 'Get current time for site location'
+configure: site_location_time.settings_form
+core: '8.x'
+package: Custom
+core_version_requirement: ^8 || ^9

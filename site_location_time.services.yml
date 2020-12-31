@@ -1,0 +1,5 @@
+services:
+  site_location_time.current_time:
+    class: Drupal\site_location_time\Services\CurrentTime
+    arguments:
+      - '@config.factory'

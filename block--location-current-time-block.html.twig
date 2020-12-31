@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Template file for Location with Current Time block.
+ */
+#}
+<div class="location-current-time">
+  <div class="location">
+    {% if current_location is not empty and current_location is not null %}
+      Location : {{ current_location }}
+    {% endif %}
+  </div>
+  <div class="time">
+    {% if location_current_time is not empty and location_current_time is not null %}
+      Current Time : {{ location_current_time }}
+    {% endif %}
+  </div>
+</div>
