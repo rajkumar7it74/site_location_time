@@ -51,7 +51,14 @@ class InvalidateBlockCache implements EventSubscriberInterface {
   }
 
   /**
+   * Sets expires and max-age for bubbled-up max-age values that are > 0.
    *
+   * @param \Symfony\Component\HttpKernel\Event\FilterResponseEvent $event
+   *   The response event.
+   *
+   * @throws \Exception
+   *   Thrown when \DateTime() cannot create a new date object from the
+   *   arguments passed in.
    */
   public function onResponse(FilterResponseEvent $event) {
     // Don't bother proceeding on sub-requests.
