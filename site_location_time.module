@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Site Location Time.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function site_location_time_theme($existing, $type, $theme, $path) {
+  return [
+    'location_with_current_time_block' => [
+      'template' => 'block--location-with-current-time-block',
+      'variables' => [
+        'current_location' => NULL,
+        'location_current_time' => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,14 @@
+# Schema for the configuration files of the site location module.
+site_location.settings:
+  type: config_object
+  label: 'Site location and timezone settings'
+  mapping:
+    country:
+      type: string
+      label: 'Country'
+    city:
+      type: string
+      label: 'City'
+    timezone:
+      type: string
+      label: 'Timezone'

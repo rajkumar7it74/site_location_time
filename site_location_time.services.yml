@@ -1,0 +1,9 @@
+services:
+  site_location_time.manager:
+    class: Drupal\site_location_time\Services\SiteLocationTimezoneManager
+    arguments: ['@config.factory']
+  site_location_time.invalidate_block_cache:
+    class: Drupal\site_location_time\EventSubscriber\InvalidateBlockCache
+    arguments: ['@datetime.time', '@current_user']
+    tags:
+      - { name: event_subscriber }

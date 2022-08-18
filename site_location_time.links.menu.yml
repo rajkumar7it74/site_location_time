@@ -1,0 +1,5 @@
+site_location_time.settings_form:
+  title: 'Site Location and Timezone Configuration Form'
+  description: 'Configure the site location and timezone.'
+  route_name: site_location_time.settings_form
+  parent: system.admin_config_system

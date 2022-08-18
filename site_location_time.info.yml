@@ -1,0 +1,6 @@
+name: 'Site Location Time'
+type: module
+description: 'Set site location with timezone and Get current time for site.'
+configure: site_location_time.settings_form
+package: Custom
+core_version_requirement: ^8 || ^9
